@@ -1,190 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="index.css">            
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Tezo</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-icon">
-                <img class="nav-img" src="./images/slidebar.png" alt="slidebar image" onclick="openNav()">
-            </div>
-            <div class="logo">
-                <img src="./images/logo.png" alt="Logo image">
-            </div>
-            <div class="nav-content">
-                <section class="items">
-                    <p>ALL</p>
-                    <div class="dashboard-dropdown">
-                        <div class="dashboard " >
-                            <div>
-                                <img  src="./images/lock.png" alt="dashboard image">
-                                <p>Dashboard</p>
-                            </div>
-                        </div>
-                        <!-- <ul id="dashboard-items">
+      <aside class="sidebar">
+        <div class="sidebar-icon">
+          <img
+            class="nav-img"
+            src="./images/slidebar.png"
+            alt="slidebar image"
+            onclick="openNav()"
+          />
+        </div>
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo image" />
+        </div>
+        <div class="nav-content">
+          <section class="items">
+            <p>ALL</p>
+            <div class="dashboard-dropdown">
+              <div class="dashboard">
+                <div>
+                  <img src="./images/lock.png" alt="dashboard image" />
+                  <p>Dashboard</p>
+                </div>
+              </div>
+              <!-- <ul id="dashboard-items">
                             <li>Profile</li>
                             <li>Help</li>
                         </ul> -->
-                    </div>
-                    <div class="roles-dropdown" >
-                        <div class="roles" >
-                            <div>
-                                <img src="./images/lock.png" alt="roles image">
-                                <p>Roles</p>
-                            </div>
-                        </div>
-                        <!-- <ul id="roles-items">
+            </div>
+            <div class="roles-dropdown">
+              <div class="roles">
+                <div>
+                  <img src="./images/lock.png" alt="roles image" />
+                  <p>Roles</p>
+                </div>
+              </div>
+              <!-- <ul id="roles-items">
                             <li>Full-Stack-Developer</li>
                             <li>QA Analyst</li>
                         </ul> -->
-                    </div>
-
-                    <div class="employee-dropdown">
-                        <input type="checkbox" id="click">
-                        <label for="click" class="tmp" >
-                            <div class="employees" >
-                                <div>
-                                    <img src="./images/employee.png" alt="employees image">
-                                    <p>Employees</p>
-                                </div>
-                            </div>
-                        </label>
-                        <ul class="items">
-                            <li>All</li>
-                            <li>Active</li>
-                            <li>In Active</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="departments">
-                    <p>Departments</p>
-                    <ul>
-                        <li>
-                            <p>IT</p>
-                            <div class="count">
-                                <p>3</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>UI/UX</p>
-                            <div class="count">
-                                <p>3</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>PE</p>
-                            <div class="count">
-                                <p>2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Human Resources</p>
-                            <div class="count">
-                                <p>24</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Sales</p>
-                            <div class="count">
-                                <p>12</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-
-                <section class="user-management">
-                    <p>ROLE/USER MANAGEMENT</p>
-                    <div class="user-roles">
-                        <img src="./images/lock.png" alt="roles image">
-                        <p>Roles</p>
-                    </div>
-                    <div class="assign-roles">
-                        <img src="./images/lock.png" alt="user roles image">
-                        <p>Assign User Roles</p>
-                    </div>
-                </section>
-
-                    <section class="update">
-                        <p>Install new update 2.3.1A</p>
-                        <p class="description">Allow to launch the new update for the AD application</p>
-                        <div class="btn">
-                            <button class="Dismiss">Dismiss</button>
-                            <button class="">Accept</button>
-                        </div>
-                    </section>
             </div>
-        </aside>
 
-        <main>
-            <header>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search (ctrl+/)">
+            <div class="employee-dropdown">
+              <input type="checkbox" id="click" />
+              <label for="click" class="tmp">
+                <div class="employees">
+                  <div>
+                    <img src="./images/employee.png" alt="employees image" />
+                    <p>Employees</p>
+                  </div>
                 </div>
-                <div class="icons">  
-                    <img src="./images/language.png" alt="language image">
-                    <img src="./images/mode.png" alt="view image">
-                    <img src="./images/theme.png" alt="theme image">
-                    <img src="./images/notification.png" alt="notofications image">
-                    <img src="./images/admin.png" alt="admin image">
-                    <div class="info">
-                        <p class="name">John Abraham</p>
-                        <p class="role">Admin</p>
-                    </div>
-                </div>
-            </header>
-            <div class="main-content">
-                <div class="add-employee">
-                    <div class="text">
-                        <h2>Employees</h2>
-                        <p>Find all of your company's employee accounts and their associated roles</p>
-                    </div>
-                    <div class="btn">
-                        <button class="export">EXPORT</button>
-                        <button class="add">ADD-EMPLOYEE</button>
-                    </div>
-                </div>
-
-                <div class="filter">
-                    <span>A</span>
-                    <span>B</span>
-                    <span>C</span>
-                    <span>D</span>
-                    <span>E</span>
-                    <span>F</span>
-                    <span>G</span>
-                    <span>H</span>
-                    <span>I</span>
-                    <span>J</span>
-                    <span>K</span>
-                    <span>L</span>
-                    <span>M</span>
-                    <span>N</span>
-                    <span>O</span>
-                    <span>P</span>
-                    <span>Q</span>
-                    <span>R</span>
-                    <span>S</span>
-                    <span>T</span>
-                    <span>U</span>
-                    <span>V</span>
-                    <span>W</span>
-                    <span>X</span>
-                    <span>Y</span>
-                    <span>Z</span>
-                    <span>Z</span>
-                </div>
+              </label>
+              <ul class="items">
+                <li>All</li>
+                <li>Active</li>
+                <li>In Active</li>
+              </ul>
             </div>
-        </main>
-       
+          </section>
+
+          <section class="departments">
+            <p>Departments</p>
+            <ul>
+              <li>
+                <p>IT</p>
+                <div class="count">
+                  <p>3</p>
+                </div>
+              </li>
+              <li>
+                <p>UI/UX</p>
+                <div class="count">
+                  <p>3</p>
+                </div>
+              </li>
+              <li>
+                <p>PE</p>
+                <div class="count">
+                  <p>2</p>
+                </div>
+              </li>
+              <li>
+                <p>Human Resources</p>
+                <div class="count">
+                  <p>24</p>
+                </div>
+              </li>
+              <li>
+                <p>Sales</p>
+                <div class="count">
+                  <p>12</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="user-management">
+            <p>ROLE/USER MANAGEMENT</p>
+            <div class="user-roles">
+              <img src="./images/lock.png" alt="roles image" />
+              <p>Roles</p>
+            </div>
+            <div class="assign-roles">
+              <img src="./images/lock.png" alt="user roles image" />
+              <p>Assign User Roles</p>
+            </div>
+          </section>
+
+          <section class="update">
+            <p>Install new update 2.3.1A</p>
+            <p class="description">
+              Allow to launch the new update for the AD application
+            </p>
+            <div class="btn">
+              <button class="Dismiss">Dismiss</button>
+              <button class="">Accept</button>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <main>
+        <header>
+          <div class="search-bar">
+            <input type="text" placeholder="Search (ctrl+/)" />
+          </div>
+          <div class="icons">
+            <img src="./images/language.png" alt="language image" />
+            <img src="./images/mode.png" alt="view image" />
+            <img src="./images/theme.png" alt="theme image" />
+            <img src="./images/notification.png" alt="notofications image" />
+            <img src="./images/admin.png" alt="admin image" />
+            <div class="info">
+              <p class="name">John Abraham</p>
+              <p class="role">Admin</p>
+            </div>
+          </div>
+        </header>
+        <div class="main-content">
+          <section class="add-employee">
+            <div class="text">
+              <h2>Employees</h2>
+              <p>
+                Find all of your company's employee accounts and their
+                associated roles
+              </p>
+            </div>
+            <div class="btn">
+              <button class="export">EXPORT</button>
+              <button class="add">ADD-EMPLOYEE</button>
+            </div>
+          </section>
+
+          <section class="filter">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+            <span>D</span>
+            <span>E</span>
+            <span>F</span>
+            <span>G</span>
+            <span>H</span>
+            <span>I</span>
+            <span>J</span>
+            <span>K</span>
+            <span>L</span>
+            <span>M</span>
+            <span>N</span>
+            <span>O</span>
+            <span>P</span>
+            <span>Q</span>
+            <span>R</span>
+            <span>S</span>
+            <span>T</span>
+            <span>U</span>
+            <span>V</span>
+            <span>W</span>
+            <span>X</span>
+            <span>Y</span>
+            <span>Z</span>
+            <span>Z</span>
+          </section>
+
+          <section class="table">
+            <div class="delete">
+              <div class="btn">
+                <img src="./images/arrow-left-down.png" alt="arrow-left-down" />
+                <button>Delete</button>
+              </div>
+              <img src="./images/table-icon.png" alt="table icon" />
+            </div>
+            <table>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <th>
+                    <div class="heading-wrapper">
+                      <p>USER</p>
+                      <div class="icon"></div>
+                    </div>
+                </th>
+                <th>
+                  <div class="heading-wrapper">
+                    <p>LOCATION</p>
+                    <div class="icon"></div>
+                  </div>
+                </th>
+                <th>
+                  <div class="heading-wrapper">
+                    <p>DEPARTMENT</p>
+                    <div class="icon"></div>
+                  </div>
+                </th>
+                <th>
+                  <div class="heading-wrapper">
+                    <p>ROLE</p>
+                    <div class="icon"></div>
+                  </div>
+                </th>
+                <th>
+                  <div class="heading-wrapper">
+                    <p>EMP NO</p>
+                    <div class="icon"></div>
+                  </div>
+                </th>
+                <th>
+                  <div class="heading-wrapper">
+                    <p>STATUS</p>
+                    <div class="icon"></div>
+                  </div>
+                </th>
+                <th>
+                  <div class="heading-wrapper">
+                    <p>JOIN DT</p>
+                    <div class="icon"></div>
+                  </div>
+                </th>
+                <th>...</th>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="user">
+                    <img src="./images/admin.png" alt="user" />
+                    <div class="user-details">
+                      <p class="name">Edgar Jones</p>
+                      <p class="mail">Edagar@tezo.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>Hyderabad</td>
+                <td>Product Engg</td>
+                <td>Full-Stack Developer</td>
+                <td>TZ002341</td>
+                <td>Active</td>
+                <td>12/03/2023</td>
+                <td>...</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </main>
     </div>
-    <!-- <script src="index.js"></script> -->
-</body>
+  </body>
 </html>
