@@ -7,27 +7,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
 
     <title>Tezo</title>
   </head>
   <body>
     <div class="container">
-
       <!-- Sidebar Section Starts -->
       <aside class="sidebar">
         <!-- icon section starts -->
         <div class="sidebar-icon">
-          <img class="nav-img" src="./images/slidebar.png" alt="slidebar image"/>
+          <img
+            class="nav-img"
+            src="../images/slidebar.png"
+            alt="slidebar image"
+          />
         </div>
         <div class="logo">
-          <img src="./images/logo.png" alt="Logo image" />
+          <img src="../images/tezoLogo.svg" alt="Logo image" />
         </div>
         <!-- icon section ends -->
 
         <!-- nav-content starts -->
         <div class="nav-content">
-          
           <div>
             <!-- dashboard items section starts -->
             <section class="dashboard-items">
@@ -35,7 +37,7 @@
               <div class="dashboard-dropdown">
                 <div class="dashboard">
                   <div>
-                    <img src="./images/dashboard.svg" alt="dashboard image" />
+                    <img src="../images/dashboard.svg" alt="dashboard image" />
                     <p>Dashboard</p>
                   </div>
                 </div>
@@ -46,7 +48,10 @@
                 <label for="click" class="tmp">
                   <div class="employees">
                     <div>
-                      <img src="./images/employees.svg" alt="employees image" />
+                      <img
+                        src="../images/employees-colored.svg"
+                        alt="employees image"
+                      />
                       <p>Employees</p>
                     </div>
                   </div>
@@ -63,12 +68,14 @@
             <!-- user-management section starts -->
             <section class="user-management">
               <p>ROLE/USER MANAGEMENT</p>
-              <div class="user-roles">
-                <img src="./images/roles.svg" alt="roles image" />
-                <p>Roles</p>
-              </div>
+              <a href="../html/roles.html" class="active">
+                <div class="user-roles">
+                  <img src="../images/roles-homepage.svg" alt="roles image" />
+                  <p>Roles</p>
+                </div>
+              </a>
               <div class="assign-roles">
-                <img src="./images/access-rights.svg" alt="user roles image" />
+                <img src="../images/access-rights.svg" alt="user roles image" />
                 <p>Access Rights</p>
               </div>
             </section>
@@ -91,7 +98,7 @@
         <!-- nav-content ends -->
       </aside>
       <!-- Sidebar section ends -->
-      
+
       <!-- Main section starts -->
       <main>
         <!-- header Section starts -->
@@ -100,11 +107,11 @@
             <input type="text" placeholder="Search (ctrl+/)" />
           </div>
           <div class="icons">
-            <img src="./images/language.png" alt="language image" />
-            <img src="./images/mode.png" alt="view image" />
-            <img src="./images/theme.png" alt="theme image" />
-            <img src="./images/notification.png" alt="notofications image" />
-            <img src="./images/admin.png" alt="admin image" />
+            <img src="../images/language.png" alt="language image" />
+            <img src="../images/mode.png" alt="view image" />
+            <img src="../images/theme.png" alt="theme image" />
+            <img src="../images/notification.png" alt="notofications image" />
+            <img src="../images/admin.png" alt="admin image" />
             <div class="info">
               <p class="name">John Abraham</p>
               <p class="role">Admin</p>
@@ -133,7 +140,7 @@
 
           <!-- options section starts -->
           <section class="options">
-            <img src="./images/filter.png" alt="filter icon">
+            <img src="../images/filter.png" alt="filter icon" />
             <span>A</span>
             <span>B</span>
             <span>C</span>
@@ -163,19 +170,19 @@
             <span>Z</span>
           </section>
           <!-- options section ends -->
-          
+
           <!-- filter section starts -->
           <section class="filter">
             <div class="filter-options">
               <p>Filter</p>
-              <img src="./images/sort-descending.png" alt="sorting icon">
-              <div >
+              <img src="../images/sort-descending.png" alt="sorting icon" />
+              <div>
                 <p>Status</p>
               </div>
-              <div >
+              <div>
                 <p>Location</p>
               </div>
-              <div >
+              <div>
                 <p>Department</p>
               </div>
             </div>
@@ -186,24 +193,27 @@
             </div>
           </section>
           <!-- filter section ends -->
-          
+
           <!-- user-data section starts -->
           <section class="user-data">
             <div class="delete">
               <div class="btn">
-                <img src="./images/arrow-left-down.png" alt="arrow-left-down" />
+                <img
+                  src="../images/arrow-left-down.png"
+                  alt="arrow-left-down"
+                />
                 <button>Delete</button>
               </div>
-              <img src="./images/table-icon.png" alt="table icon" />
+              <img src="../images/table-icon.png" alt="table icon" />
             </div>
             <table>
               <tr>
                 <td><input type="checkbox" /></td>
                 <th>
-                    <div class="heading-wrapper">
-                      <p>USER</p>
-                      <div class="icon"></div>
-                    </div>
+                  <div class="heading-wrapper">
+                    <p>USER</p>
+                    <div class="icon"></div>
+                  </div>
                 </th>
                 <th>
                   <div class="heading-wrapper">
@@ -247,7 +257,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
@@ -268,7 +278,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
@@ -289,7 +299,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
@@ -310,7 +320,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
@@ -331,7 +341,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
@@ -352,7 +362,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
@@ -373,7 +383,7 @@
                 <td><input type="checkbox" /></td>
                 <td>
                   <div class="user">
-                    <img src="./images/admin.png" alt="user" />
+                    <img src="../images/admin.png" alt="user" />
                     <div class="user-details">
                       <p class="name">Edgar Jones</p>
                       <p class="mail">Edagar@tezo.com</p>
