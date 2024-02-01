@@ -4,8 +4,6 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  height: 1024px;
-  width: 1440px;
 }
 .container {
   padding: 1rem 2rem;
@@ -312,7 +310,7 @@ header {
     justify-content: space-between;
     h2 {
       color: #4c5f71;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       margin: 1.3rem 0rem;
       font-weight: 600;
     }
@@ -340,150 +338,62 @@ header {
       padding-right: 10px;
     }
   }
-  .filter {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem 1rem;
-    border: 1px solid #f44848;
-    background-color: #fdf2f2;
-    border-radius: 10px;
-    .filter-options {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      p {
-        font-size: 1rem;
-        color: #f55d5d;
-        font-weight: 700;
-      }
-      div {
-        border: 1px solid #f55d5d;
-        padding: 0.6rem;
-        text-align: center;
-        border-radius: 10px;
-        background-color: #fff;
-        p {
-          font-size: 1rem;
-          margin: 0;
-          color: #7c7f81;
-        }
-        p::after {
-          font-family: "FontAwesome";
-          content: "\f078";
-          margin-left: 5px;
-        }
-      }
-    }
-    .btn {
-      button {
-        padding: 0.7rem 1.5rem;
-        border-radius: 10px;
-        border: none;
-        margin-left: 1rem;
-      }
-      .reset {
-        background-color: #fff;
-        color: #f55d5d;
-        font-size: 1.2rem;
-        border: 1px solid #f44848;
-      }
-      .apply {
-        background-color: #f55d5d;
-        color: #fff;
-        font-size: 1.2rem;
-      }
+  .role-description {
+    margin-top: 1rem;
+    p {
+      color: #4c5f71;
+      font-size: 0.89rem;
     }
   }
   .cards {
     display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
     flex-wrap: wrap;
-    gap: 15px;
-    p {
-      color: #4c5f71;
-    }
+    margin-top: 1rem;
+    gap: 1.3rem;
     .card {
       width: 300px;
-      padding: 1rem;
+      padding: 1.5rem;
       box-shadow: 0 0 0 2px #e6e6e6;
       border-radius: 10px;
-      .text-icon {
+      .image-section {
         display: flex;
-        justify-content: space-between;
-        p {
-          font-size: 1.2rem;
-          font-weight: bold;
+        align-items: center;
+        gap: 15px;
+        img {
+          height: 45px;
+          border-radius: 50%;
+        }
+        div {
+          p {
+            margin: 0;
+          }
+          p:first-child {
+            font-size: 1.2rem;
+          }
+          p:nth-child(2) {
+            font-size: 0.7rem;
+          }
         }
       }
       .about {
-        .department,
-        .location {
+        margin-top: 1rem;
+        div {
+          margin-top: 1rem;
           display: flex;
-          justify-content: space-between;
-          p {
-            font-size: 1rem;
-            margin: 0.5rem;
-          }
-          .department-text,
-          .location-text {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-          }
-        }
-        .total-employees {
-          display: flex;
-          justify-content: space-between;
           align-items: center;
+          gap: 15px;
           img {
             height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            position: relative;
           }
-          .img-container {
-            display: flex;
-            position: relative;
-            left: 30px;
-            img:first-child {
-              z-index: 1;
-            }
-            img:nth-child(2) {
-              z-index: 2;
-              right: 10px;
-            }
-            img:nth-child(3) {
-              z-index: 3;
-              right: 20px;
-            }
-            img:nth-child(4) {
-              z-index: 4;
-              right: 30px;
-            }
-            p {
-              z-index: 5;
-              font-size: 12px;
-              position: relative;
-              margin: 0;
-              border-radius: 50%;
-              background-color: #fff;
-              color: #4c5f71;
-              text-align: center;
-              right: 40px;
-            }
+          p {
+            margin: 0;
           }
         }
       }
-      .employee-view {
+      .view-detail {
         display: flex;
         justify-content: flex-end;
         gap: 10px;
-        a {
-          text-decoration: none;
-        }
       }
     }
   }
