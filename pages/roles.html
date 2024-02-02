@@ -7,8 +7,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/roles.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/roles.css">
     <title>Tezo</title>
   </head>
   <body>
@@ -16,16 +16,11 @@
       <!-- Sidebar Section Starts -->
       <aside class="sidebar">
         <!-- icon section starts -->
-        <div class="sidebar-icon">
-          <img
-            class="nav-img"
-            src="../images/slidebar.png"
-            alt="slidebar image"
-          />
-        </div>
+
         <div class="logo">
           <img src="../images/tezoLogo.svg" alt="Logo image" />
         </div>
+
         <!-- icon section ends -->
 
         <!-- nav-content starts -->
@@ -44,20 +39,14 @@
               </div>
 
               <div class="employee-dropdown">
-                <input type="checkbox" id="click" />
-                <label for="click" class="tmp">
+                <a href="./index.html">
                   <div class="employees">
                     <div>
                       <img src="../images/employee.svg" alt="employees image" />
                       <p>Employees</p>
                     </div>
                   </div>
-                </label>
-                <ul class="items">
-                  <li>All</li>
-                  <li>Active</li>
-                  <li>In Active</li>
-                </ul>
+                </a>
               </div>
             </section>
             <!-- dashboard items section ends  -->
@@ -136,10 +125,19 @@
               <p>Filter</p>
               <img src="../images/sort-descending.png" alt="sorting icon" />
               <div>
-                <p>Location</p>
+                <select name="Location">
+                  <option value="Active">Location</option>
+                  <option value="Active">Hyderabad</option>
+                  <option value="InActive">Seatle</option>
+                </select>
               </div>
+
               <div>
-                <p>Department</p>
+                <select name="Department">
+                  <option value="InActive">Department</option>
+                  <option value="Active">Product Engg</option>
+                  <option value="InActive">UIUX</option>
+                </select>
               </div>
             </div>
 
