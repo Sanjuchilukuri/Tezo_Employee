@@ -43,27 +43,27 @@ body {
     }
   }
 
-  .nav-content {
+  .sidenav-content {
     height: calc(100dvh - 3.5rem - 2.68rem);
     width: 100%;
     margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .dashboard-items {
+    .sidenav-all {
       & > p:first-child {
         color: #a1a5a8;
         font-size: 1rem;
         margin-bottom: 0.4rem;
       }
-      .employee-dropdown {
+      .sidenav-all-employee {
         position: relative;
         a {
           text-decoration: none;
         }
       }
-      .dashboard,
-      .employees {
+      .all-dashboard-item,
+      .all-employees-item {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -103,7 +103,7 @@ body {
       }
     }
 
-    .user-management {
+    .sidenav-role {
       margin-top: 0.8rem;
       a {
         text-decoration: none;
@@ -113,11 +113,10 @@ body {
         color: #a1a5a8;
         font-size: 0.8rem;
       }
-      .user-roles {
+      .user-roles:first-child {
         margin-top: 1rem;
       }
-      .user-roles,
-      .assign-roles {
+      .user-roles {
         width: 85%;
         position: relative;
         display: flex;
@@ -148,7 +147,7 @@ body {
       }
     }
 
-    .update {
+    .sidenav-update {
       position: relative;
       bottom: 0;
       background-color: rgba(253, 233, 233, 0.456);
@@ -159,12 +158,12 @@ body {
         color: #f44848;
         font-size: 1rem;
       }
-      .description {
+      .update-description {
         margin-top: 0.5rem;
         font-size: 0.9rem;
         color: #6a6f74;
       }
-      .btn {
+      div{
         display: flex;
         margin-top: 0.5rem;
         flex-wrap: wrap;
@@ -205,7 +204,7 @@ header {
   border-radius: 8px;
   border: 2px solid #fff;
   z-index: 99;
-  .search-bar {
+  .header-search-bar {
     width: 100%;
     height: 100%;
     input {
@@ -220,13 +219,13 @@ header {
       outline: none;
     }
   }
-  .icons {
+  .header-icons {
     display: flex;
     height: 100%;
     gap: 0.625rem;
     margin-right: 1.3rem;
     align-items: center;
-    .info {
+    .user-info {
       p {
         font-size: 1rem;
         margin: 0;
@@ -245,7 +244,7 @@ header {
       }
     }
   }
-  .icons::after {
+  .header-icons::after {
     font-family: "FontAwesome";
     content: "\f078";
   }
@@ -269,7 +268,7 @@ header {
       margin-top: 0;
       margin-bottom: 0;
     }
-    .btn {
+    div:nth-child(2) {
       display: flex;
     }
     button {
@@ -279,22 +278,22 @@ header {
       border: none;
       outline: none;
     }
-    .export {
+    .export-btn {
       background-color: #fff;
       color: #a1a5a8;
       border: 1px solid rgb(138, 128, 128);
       margin-right: 0.9375rem;
     }
-    .export::before {
+    .export-btn::before {
       content: url(../images/export.png);
       padding-right: 0.625rem;
     }
-    .add {
+    .add-btn {
       color: #fff;
       background-color: #f44848;
       border-radius: 0.5625rem;
     }
-    .add::before {
+    .add-btn::before {
       font-family: "FontAwesome";
       content: "\2b";
       padding-right: 0.625rem;
@@ -330,20 +329,20 @@ header {
         color: #7c7f81;
       }
     }
-    .btn {
+    div:nth-child(2){
       button {
         padding: 0.4rem 1.5rem;
         border-radius: 0.625rem;
         border: none;
         margin-left: 1rem;
       }
-      .reset {
+      .reset-btn {
         background-color: #fff;
         color: #f55d5d;
         font-size: 0.8rem;
         border: 1px solid #f44848;
       }
-      .apply {
+      .apply-btn {
         background-color: #f55d5d;
         color: #fff;
         font-size: 1rem;

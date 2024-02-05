@@ -1,6 +1,5 @@
 @import url(../styles/common.css);
-
-.user-roles {
+.active-roles {
   margin-top: 1rem;
   background-color: #fde9e9;
   border-radius: 8px;
@@ -8,7 +7,7 @@
     color: #f44848 !important;
   }
 }
-.user-roles::after {
+.active-roles::after {
   color: #f44848 !important;
 }
 .roles-wrapper {

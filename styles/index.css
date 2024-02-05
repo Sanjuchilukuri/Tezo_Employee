@@ -1,14 +1,14 @@
 @import url(../styles/common.css);
-.employees {
+.all-employees-item {
   background-color: #fde9e9;
 }
-.employees div p {
+.all-employees-item div p {
   color: #f44848 !important;
 }
-.employees::after {
+.all-employees-item::after {
   color: #f44848 !important;
 }
-.employee-dropdown::after {
+.sidenav-all-employee::after {
   content: " ";
   position: absolute;
   right: 0.5rem;
@@ -53,7 +53,7 @@
       padding: 0.8rem 1.2rem;
       align-items: center;
       border-bottom: 1px solid black;
-      .btn {
+      div {
         display: flex;
         gap: 1rem;
         align-items: center;
